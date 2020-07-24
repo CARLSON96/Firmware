@@ -1,23 +1,24 @@
 
 px4_add_board(
 	PLATFORM nuttx
-	VENDOR hex
-	MODEL cube-yellow
+	VENDOR cubepilot
+	MODEL orange
 	LABEL default
 	TOOLCHAIN arm-none-eabi
 	ARCHITECTURE cortex-m7
 	ROMFSROOT px4fmu_common
-	IO hex_io-v2_default
+	BUILD_BOOTLOADER
+	IO cubepilot_io-v2_default
 	TESTING
-	UAVCAN_INTERFACES 1
+	UAVCAN_INTERFACES 2
 	SERIAL_PORTS
 		# IO DEBUG:/dev/ttyS0
 		TEL1:/dev/ttyS1
 		TEL2:/dev/ttyS2
 		GPS1:/dev/ttyS3
-		GPS2:/dev/ttyS4
+		# PX4IO:/dev/ttyS4
 		# CONSOLE:/dev/tty5
-		# PX4IO:/dev/ttyS6
+		GPS2:/dev/ttyS6
 	DRIVERS
 		adc
 		barometer # all available barometer drivers
@@ -28,7 +29,6 @@ px4_add_board(
 		distance_sensor # all available distance sensor drivers
 		dshot
 		gps
-		#heater
 		#imu # all available imu drivers
 		imu/adis16448
 		imu/adis16477
@@ -50,10 +50,7 @@ px4_add_board(
 		pwm_out_sim
 		pwm_out
 		px4io
-		rc_input
 		roboclaw
-		rpm
-		#safety_button
 		tap_esc
 		telemetry # all available telemetry drivers
 		test_ppm
@@ -67,7 +64,6 @@ px4_add_board(
 		commander
 		dataman
 		ekf2
-		esc_battery
 		events
 		fw_att_control
 		fw_pos_control_l1
@@ -81,7 +77,6 @@ px4_add_board(
 		mc_hover_thrust_estimator
 		mc_pos_control
 		mc_rate_control
-		#micrortps_bridge
 		navigator
 		rc_update
 		rover_pos_control

@@ -1,7 +1,7 @@
 {
     "board_id": 120,
     "magic": "PX4FWv1",
-    "description": "Firmware for the Hex Cube Yellow board",
+    "description": "Firmware for the CubePilot Yellow board",
     "image": "",
     "build_time": 0,
     "summary": "CubeYellow",

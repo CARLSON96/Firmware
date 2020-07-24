@@ -31,8 +31,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  ************************************************************************************/
-#ifndef __NUTTX_CONFIG_HEX_CUBE_YELLOW_INCLUDE_BOARD_H
-#define __NUTTX_CONFIG_HEX_CUBE_YELLOW_INCLUDE_BOARD_H
+#pragma once
 
 /************************************************************************************
  * Included Files
@@ -384,5 +383,3 @@
 # define PROBE(n,s)
 # define PROBE_MARK(n)
 #endif
-
-#endif  /*__NUTTX_CONFIG_HEX_CUBE_YELLOW_INCLUDE_BOARD_H  */

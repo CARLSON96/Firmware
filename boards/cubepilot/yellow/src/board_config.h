@@ -34,7 +34,7 @@
 /**
  * @file board_config.h
  *
- * HEX Cube Orange internal definitions
+ * Board internal definitions
  */
 
 #pragma once

@@ -1,7 +1,7 @@
 
 px4_add_board(
 	PLATFORM nuttx
-	VENDOR hex
+	VENDOR cubepilot
 	MODEL io-v2
 	TOOLCHAIN arm-none-eabi
 	CONSTRAINED_FLASH
